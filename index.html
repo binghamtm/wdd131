@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Thomas Bingham">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Thomas Bingham - Home Page">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Thomas Bingham</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <script type="module" src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>Ollo</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Thomas Bingham</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="www.linkedin.com/in/thomas-bingham-391790252">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng">Favorite
+                        Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img id="profile" src="images/profile.webp">
+            <p>Hi! My Name is Thomas, and this is my home page! This page will list a bunch of my interests, of which
+                there are many. I currently work as a loan officer at MACU. Every day there is a new adventure. I also
+                love traveling, my favorite places are the Mountains and South Africa/Namibia, where I served my
+                mission. I love going shooting, BYU football, reading, Basketball, volleyball, camping, and just hanging
+                out with friends</p>
+        </section>
+        <section class="card">
+            <h2>My Favorite Links</h2>
+            <ul>
+                <li><a href="https://www.churchofjesuschrist.org/?lang=eng">Church Homepage</a></li>
+                <li><a href="https://www.cougarfan.com/">BYU News</a></li>
+                <li><a href="https://www.macu.com/">MACU</a></li>
+                <li><a href="https://magpul.com/firearm-accessories/grips.html">Magpul</a></li>
+                <li><a href="https://brandonmull.com/">Brandon Mull</a></li>
+                <li><a href="https://www.deseret.com/">Deseret News</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> Thomas Bingham | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
 </body>
+
 </html>
