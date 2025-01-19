@@ -14,13 +14,26 @@
     padding: 0;
 }
 
-
-
-h1 {
-    text-align: center;
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     background-color: var(--primary-color);
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
+    padding-left: 2em;
+    max-width: auto;
+}
+button {
+    width: 3em;
+    background-color: var(--primary-color);
+    border: none;
+    
+}
+h1 {
+    color: var(--accent-2-color)
+
+    
+    
+    
 }
 
 h2 {
@@ -29,31 +42,33 @@ h2 {
     font-size: xx-large
 }
 
+h1, h2 {
+    font-family: var(--font-2);
+}
+
 .navigation {
-    display: flex;
-    justify-content: space-around;
+    
+    justify-content: space-evenly;
     font-size: xx-large;
-    padding-right: 3em;
-    background-color: var(--accent-2-color);
+    
+    
     font-family: var(--font-1);
-    padding: 0.5em;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
+    
 }
+
 
 .navigation a {
-    color: var(--secondary-color)
-}
-
-section a {
-    color: black;
-}
-
-section li:hover {
-    background-color: var(--accent-1-color);
     color: var(--accent-2-color);
+    display: none;
+}
+
+.open a {
+    display: block;
 }
 
 .navigation li a:hover {
@@ -61,35 +76,42 @@ section li:hover {
     color: black;
 }
 
-ul {
-    list-style: none;
-}
-
-.card ul {
-    text-align: center;
-}
-
-.card li {
-    padding: 0.25em;
+#menu::before {
+    content: '☰';
     font-size: x-large;
 }
 
-.card img {
-    padding-left: 1em;
+#menu.open::before{
+    content: 'X';
+    font-size: x-large;
+}
+
+ul {
+    list-style: none;
+    
 }
 
 main {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.album {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     width: 90%;
     margin: auto;
 }
 
-.card {
-    margin: 5em;
-    background-color: var(--secondary-color);
-    padding: 2em;
-    border-radius: 20px;
+img {
+    width: 20em;
+    max-width: 100%;
+}
+
+figure {
+   text-align: center;
+   padding: 3em;
+   font-family: var(--font-1);
 }
 
 p {
@@ -97,18 +119,8 @@ p {
     font-size: x-large;
 }
 
-h1,
-h2 {
-    font-family: var(--font-2);
-}
-
-#profile {
-    width: 400px;
-    float: right;
-}
-
 footer {
     text-align: center;
     background-color: var(--primary-color);
-    padding: 3em;
+    padding: 2em;
 }
