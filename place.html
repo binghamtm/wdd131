@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Bingham">
+    <meta name="description" content="this page describes the best place in the world: South Africa!">
+
+    <title>South Africa</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>South Africa</h1>
+    </header>
+    <main>
+        <div>
+            <picture>
+                <source srcset="images/cheetah-large.webp" media="(min-width: 1000px)">
+                <img src="images/cheetah.webp" alt="cheetah">
+            </picture>
+        </div>
+        <section>
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>1,219,090 km²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>60,410,000</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Pretoria</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>11 offical languages</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>South African Rand</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC+2</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+27</td>
+                </tr>
+                <tr>
+                    <th>National Animal:</th>
+                    <td>Springbok</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <h3 class="weather-symbol"></h3>
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td>21°C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td>
+                        <div>4</div> km/h
+                    </td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td>x</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
