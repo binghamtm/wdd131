@@ -6,3 +6,4 @@ const today = new Date();
 
 currentYear.innerHTML = today.getFullYear();
 lastModified.innerHTML = document.lastModified
+

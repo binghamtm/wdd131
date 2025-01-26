@@ -20,13 +20,15 @@
         <h1>South Africa</h1>
     </header>
     <main>
-        <div>
+        <div class="box-decoration-one"></div>
+        <div class="cheetah">
             <picture>
-                <source srcset="images/cheetah-large.webp" media="(min-width: 1000px)">
-                <img src="images/cheetah.webp" alt="cheetah">
+                <source class="cheetah-image" srcset="images/cheetah-large.webp" media="(min-width: 1000px)">
+                <img  class="cheetah-image" src="images/cheetah.webp" alt="cheetah">
             </picture>
         </div>
-        <section>
+        
+        <section class="data">
             <h2>Data</h2>
             <table>
                 <tr>
@@ -63,8 +65,9 @@
                 </tr>
             </table>
         </section>
-        <section>
-            <h2>Weather</h2>
+        <section class="weather">
+            <h2 class="weather-heading">Weather</h2>
+            <div class="weather-icon-mobile-container"><img class="weather-icon-mobile" src="images/partly_cloudy.svg" alt="weather icon"></div>
             <h3 class="weather-symbol"></h3>
             <table>
                 <tr>
@@ -78,7 +81,7 @@
                 <tr>
                     <th>Wind:</th>
                     <td>
-                        <div>4</div> km/h
+                        4 km/h
                     </td>
                 </tr>
                 <tr>

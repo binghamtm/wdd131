@@ -1,0 +1,82 @@
+:root {
+    --color-one: #000000;
+    --color-two: #007847;
+    --color-three: #E1392D;
+    --color-four: #FFB916;
+    --color-five: #FFFFFF;
+    --color-six: #000C8A;
+    --color-six-opaque: #000C8A20;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: var(--color-five);
+    background-color: var(--color-six);
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+.cheetah {
+    text-align: center;
+    background-color: var(--color-six);
+}
+
+
+
+.cheetah-image {
+    width: 100%;
+    
+}
+
+.box-decoration-one {
+    width: 100%;
+    height: 1em;
+    background-color: var(--color-four);
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.weather-heading {
+    border-top: 1px solid var(--color-six-opaque);
+}
+
+.weather-icon-mobile {
+    width: 50%;
+    max-width: 200px;
+}
+
+.weather-icon-mobile-container {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+th {
+    text-align: right;
+}
+
+td, th {
+    padding: 5px;
+    
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--color-six);
+    color: var(--color-five);
+}
