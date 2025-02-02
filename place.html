@@ -21,75 +21,76 @@
     </header>
     <main>
         <div class="box-decoration-one"></div>
-        <div class="cheetah">
-            <picture>
-                <source class="cheetah-image" srcset="images/cheetah-large.webp" media="(min-width: 1000px)">
-                <img  class="cheetah-image" src="images/cheetah.webp" alt="cheetah">
-            </picture>
+        <div class="cheetah-background">
+            <div class="cheetah">
+                <picture>
+                    <source class="cheetah-image" srcset="images/cheetah-large.webp" media="(min-width: 600px)">
+                    <img  class="cheetah-image" src="images/cheetah.webp" alt="cheetah">
+                </picture>
+            </div>
+
+            <section class="data">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>1,219,090 km²</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>60,410,000</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Pretoria</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>11 offical languages</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>South African Rand</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>UTC+2</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+27</td>
+                    </tr>
+                    <tr>
+                        <th>National Animal:</th>
+                        <td>Springbok</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="weather">
+                <h2 class="weather-heading">Weather</h2>
+                <div class="weather-icon-mobile-container"><img class="weather-icon-mobile" src="images/partly_cloudy.svg" alt="weather icon"></div>
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>21°C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td>
+                            4 km/h
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="wind-chill">x</td>
+                    </tr>
+                </table>
+            </section>
         </div>
-        
-        <section class="data">
-            <h2>Data</h2>
-            <table>
-                <tr>
-                    <th>Area:</th>
-                    <td>1,219,090 km²</td>
-                </tr>
-                <tr>
-                    <th>Population:</th>
-                    <td>60,410,000</td>
-                </tr>
-                <tr>
-                    <th>Capital:</th>
-                    <td>Pretoria</td>
-                </tr>
-                <tr>
-                    <th>Languages:</th>
-                    <td>11 offical languages</td>
-                </tr>
-                <tr>
-                    <th>Currency:</th>
-                    <td>South African Rand</td>
-                </tr>
-                <tr>
-                    <th>Time Zone:</th>
-                    <td>UTC+2</td>
-                </tr>
-                <tr>
-                    <th>Calling Code:</th>
-                    <td>+27</td>
-                </tr>
-                <tr>
-                    <th>National Animal:</th>
-                    <td>Springbok</td>
-                </tr>
-            </table>
-        </section>
-        <section class="weather">
-            <h2 class="weather-heading">Weather</h2>
-            <div class="weather-icon-mobile-container"><img class="weather-icon-mobile" src="images/partly_cloudy.svg" alt="weather icon"></div>
-            <h3 class="weather-symbol"></h3>
-            <table>
-                <tr>
-                    <th>Temperature:</th>
-                    <td>21°C</td>
-                </tr>
-                <tr>
-                    <th>Conditions:</th>
-                    <td>Partly Cloudy</td>
-                </tr>
-                <tr>
-                    <th>Wind:</th>
-                    <td>
-                        4 km/h
-                    </td>
-                </tr>
-                <tr>
-                    <th>Wind Chill:</th>
-                    <td>x</td>
-                </tr>
-            </table>
-        </section>
     </main>
     <footer>
         <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>

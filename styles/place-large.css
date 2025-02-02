@@ -1,0 +1,51 @@
+:root {
+    --color-one: #000000;
+    --color-two: #007847;
+    --color-three: #E1392D;
+    --color-four: #FFB916;
+    --color-five: #FFFFFF;
+    --color-six: #000C8A;
+    --color-six-opaque: #000C8A20;
+}
+
+
+@media screen and (min-width: 600px) {
+    
+ 
+    .cheetah-background {
+        position: relative;
+    }
+    .data {
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        background-color: rgba(255, 255, 255, .6);
+        padding: 10px;
+        
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+        background-color: rgba(255, 255, 255, .6);
+        padding: 10px;
+    }
+
+    h2 {
+        position: relative;
+        width: 80%;
+        left: -10%;
+        background-color: var(--color-three);
+        text-align: left;
+        margin-bottom: 10px;;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+    .weather-icon-mobile-container {
+        display: none;
+    }
+}
+
