@@ -6,11 +6,16 @@
     --color-five: #FFFFFF;
     --color-six: #000C8A;
     --color-six-opaque: #000C8A20;
+    --font-one: 'lato', serif;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: var(--font-one);
 }
 
 header {
