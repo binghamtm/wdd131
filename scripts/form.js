@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {    
+document.addEventListener("DOMContentLoaded", function () {
     const currentYear = document.querySelector("#current-year");
     const lastModified = document.querySelector("#lastModified");
     const today = new Date();
     const productItem = document.querySelector("#product-name");
-    const submissionCounter = document.querySelector("#submission-counter");
+    let submissionCounter = document.querySelector("#submission-counter");
     let numVisits = 0;
     const products = [
         {
@@ -57,7 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
         numVisits = Number(window.localStorage.getItem("visits-ls"));
         numVisits++;
         localStorage.setItem("visits-ls", numVisits);
-        submissionCounter.textContent = numVisits;
 
+        if (submissionCounter) {
+            submissionCounter.textContent = numVisits;
+        }
+        else {
+            console.log("I cannot figure this out")
+        }
     }
 });
