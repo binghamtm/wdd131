@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Bingham">
+    <meta name="description" content="Form and JS practice">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/form-large.css" rel="stylesheet">
+
+    <title>Form Practice</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="fieldset">
+                <label for="product-name">Choose a product</label>
+                <select id="product-name" name="product-name" required>
+                    <option disabled selected>Select a Product</option>
+                </select>
+            </div>
+            <div class="fieldset" id="overall-rating-selection">
+                <label for="rating" id="rating">Overall Rating</label>
+                <label for="one"><input type="radio" name="rating" id="one" required>&star;</label>
+                <label for="two"><input type="radio" name="rating" id="two" required>&star;&star;</label>
+                <label for="three"><input type="radio" name="rating" id="three"required>&star;&star;&star;</label>
+                <label for="four"><input type="radio" name="rating" id="four"required>&star;&star;&star;&star;</label>
+                <label for="five"><input type="radio" name="rating" id="five"required>&star;&star;&star;&star;&star;</label>
+            </div>
+
+            <div class="fieldset">
+                <label for="date">Date of Installation</label><input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="fieldset">
+                <label for="useful-feature">Which features did you find useful in the product?</label>
+                <label for="durability"><input type="checkbox" id="durability" name="useful-feature" value="durability">Durability</label>
+                <label for="ease-of-use"><input type="checkbox" id="ease-of-use" name="useful-feature" value="ease-of-use">Ease of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="useful-feature" value="performance">Performance</label>
+                <label for="design"><input type="checkbox" id="design" name="useful-feature" value="design">Design</label>
+            </div>
+
+            <div class="fieldset">
+                <label for="review">Write your review (optional)<textarea id="review" name="review"></textarea></label>
+            </div>
+            <div class="fieldset">
+                <label for="name">Enter your name (optional)<input type="text" id="name" name="name"></label>
+            </div>
+            
+            <div class="fieldset">
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

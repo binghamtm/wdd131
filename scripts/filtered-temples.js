@@ -67,7 +67,7 @@ const temples = [
     area: 116642,
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-  }/*,
+  },
   {
     templeName: "Johannesburg South Africa",
     location: "Johannesburg, South Africa",
@@ -88,7 +88,7 @@ const temples = [
     dedicated: "2000, August, 27",
     area: 33970,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/houston-texas-temple/houston-texas-temple-23480-main.jpg"
-  }*/
+  }
 ];
 
 let templesOld = temples.filter(temple => {
