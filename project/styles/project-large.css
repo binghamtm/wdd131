@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #0047BA;
+    --secondary-color: #FFFFFF;
+    --font-1: "lato", Sans-serif;
+
+}
+
+@media screen and (min-width: 700px) {
+   
+    
+   
+    button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        
+        width: 80%;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    
+    #nike-image {
+        display: block;
+        max-width: 25%;
+        max-height: 70px;
+    }
+
+    li {
+        width: 100%;
+        font-size: 2vw;
+        border-radius: 10px;
+        
+    }
+
+    li:hover {
+        background-color: var(--secondary-color);
+        
+    }
+    li:hover a {
+        width: 100%;
+        color: var(--primary-color);
+    }
+}
