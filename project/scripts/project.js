@@ -80,104 +80,230 @@ let news = [
 
 /*************************** */
 /**both schedule function variables */
-let schedule2024Container = document.querySelector("#schedule-container-2024")
+let schedule2024Container = document.querySelector("#schedule-container-2024");
+let schedule2025Container = document.querySelector("#schedule-container-2025");
 let schedule2024 = [
 {
     date: "Sat, Aug 31",
     opponent: "Southern Illinois",
     result: "41-13 BYU",
-    opponentFinalWL: "4-8 overall, 2-6 conference",
+    opponentFinalWL: "2-6 conference, 4-8 overall",
     image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/79.png&h=200&w=200"
 },
 {
     date: "Fri, Sep 6",
     opponent: "SMU",
     result: "18-15 BYU", 
-    opponentFinalWL: "", 
+    opponentFinalWL: " 8-0 conference, 11-3 overall", 
     image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2567.png&h=200&w=200",
 },
 {
     date: "Fri, Sep 6",
     opponent: "Wyoming",
     result: "34-14 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "2-5 conference, 3-9 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2751.png&h=200&w=200",
 },
 {
     date: "Sat, Sep 21",
     opponent: "Kansas State",
     result: "38-9 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "5-4 conference, 9-4 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2306.png&h=200&w=200",
 },
 {
     date: "Sat, Sep 28",
     opponent: "Baylor",
     result: "34-28 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "6-3 conference, 8-5 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/239.png&h=200&w=200",
 },
 {
     date: "Sat, Oct 12",
     opponent: "Arizona",
     result: "41-19 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "2-7 conference, 4-8 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/12.png&h=200&w=200",
 },
 {
     date: "Fri, Oct 18",
     opponent: "Oklahoma State",
     result: "38-35 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "0-9 conference, 3-9 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/197.png&h=200&w=200",
 },
 {
     date: "Sat, Oct 26",
     opponent: "UCF",
     result: "37-24 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "2-7 conference, 4-8 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2116.png&h=200&w=200",
 },
 {
     date: "Sat, Nov 9",
     opponent: "Utah",
     result: "22-21 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "2-7 conference, 5-7 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/254.png&h=200&w=200",
 },
 {
     date: "Sat, Nov 16",
     opponent: "Kansas",
     result: "17-13 Kansas", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "4-5 conference, 5-7 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2305.png&h=200&w=200",
 },
 {
     date: "Sat, Nov 23",
     opponent: "Arizona State",
     result: "28-23 Arizona State", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "7-2 conference, 11-3 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/9.png&h=200&w=200",
 },
 {
     date: "Sat, Nov 30",
     opponent: "Houston",
     result: "30-18 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "3-6 conference, 4-8 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/248.png&h=200&w=200",
 },
 {
     date: "Sat, Dec 28",
     opponent: "Colorado",
     result: "36-14 BYU", 
-    opponentFinalWL: "", 
-    image: "",
+    opponentFinalWL: "7-2 conference, 9-4 overall", 
+    image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/38.png&h=200&w=200",
 },
-]
-
-
+];
+let schedule2025 = [
+    {
+        date: "Sat, Aug 30",
+        opponent: "Portland State",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2502.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Sep 6",
+        opponent: "Stanford",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/24.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Sep 20",
+        opponent: "East Carolina",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/151.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Sep 27",
+        opponent: "Colorado",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/38.png&h=200&w=200"
+    },
+    {
+        date: "Fri, Oct 3",
+        opponent: "West Virginia",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/277.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Oct 11",
+        opponent: "Arizona",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/12.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Oct 18",
+        opponent: "Utah",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/254.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Oct 25",
+        opponent: "Iowa State",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/66.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Nov 8",
+        opponent: "Texas Tech",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2641.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Nov 15",
+        opponent: "TCU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2628.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Nov 22",
+        opponent: "Cincinati",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2132.png&h=200&w=200"
+    },
+    {
+        date: "Sat, Nov 29",
+        opponent: "UCF",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2116.png&h=200&w=200"
+    },
+];
 /********************************** */
-
+/**Greatest Wins Variables */
+let greatestWinsContainer = document.querySelector("#greatest-wins-container");
+let greatestWins = [
+    {
+        date: "Dec 21, 1984",
+        opponent: "Michigan",
+        score: "24-17 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/130.png&h=200&w=200"
+    },
+    {
+        date: "Sep 8, 1990",
+        opponent: "#1 Miami",
+        score: "28-21 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2390.png&h=200&w=200"
+    },
+    {
+        date: "Nov 25, 2006",
+        opponent: "Utah",
+        score: "33-31 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/254.png&h=200&w=200"
+    },
+    {
+        date: "Dec 19, 1980",
+        opponent: "SMU",
+        score: "46-45 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2567.png&h=200&w=200"
+    },
+    {
+        date: "Oct 15, 1994",
+        opponent: "#17 Notre Dame",
+        score: "17-14 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/87.png&h=200&w=200"
+    },
+    {
+        date: "Sep 5, 2009",
+        opponent: "#3 Oklahoma",
+        score: "14-13 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/201.png&h=200&w=200"
+    },
+    {
+        date: "Nov 28, 2009",
+        opponent: "Utah",
+        score: "26-23 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/254.png&h=200&w=200"
+    },
+    {
+        date: "Aug 24, 1996",
+        opponent: "#12 Texas A&M",
+        score: "41-37",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/245.png&h=200&w=200"
+    },
+    {
+        date: "Sep 5, 2015",
+        opponent: "Nebraska",
+        score: "33-28 BYU",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/158.png&h=200&w=200"
+    },
+    {
+        date: "Sep 1, 1984",
+        opponent: "#3 Pittsburgh",
+        score: "20-14",
+        image: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/221.png&h=200&w=200"
+    }
+];
+/******************** */
+/**MAIN CODE************ */
 
 hamMenu();
 footerContent();
@@ -188,13 +314,17 @@ if(window.location.href.includes("/index.html")) {
 if(window.location.href.includes("/2024-schedule.html")) {
     schedule2024Assembly(schedule2024);
 }
+if(window.location.href.includes("/2025-schedule.html")) {
+    schedule2025Assembly(schedule2025);
+}
+if(window.location.href.includes("/greatest-wins.html")) {
+    greatestWinsAssembly(greatestWins);
+}
 
 
 
 
-
-
-
+/******************************* */
 /* FUNCTIONS */
 function hamMenu() {
     hamButton.addEventListener('click', () => {
@@ -220,4 +350,18 @@ function schedule2024Assembly(schedule) {
   for (let i = 0; i < schedule.length; i++) {
     schedule2024Container.innerHTML += `<div class='card'><img src='${schedule[i].image}' alt='${schedule[i].opponent}' loading="lazy"><h2>${schedule[i].opponent}</h2><p>${schedule[i].date}</p><p>Final Score: ${schedule[i].result}</p><p>Record: ${schedule[i].opponentFinalWL}</p></div>`;
   }
+}
+
+function schedule2025Assembly(schedule) {
+    schedule2025Container.innerHTML = "";
+  for (let i = 0; i < schedule.length; i++) {
+    schedule2025Container.innerHTML += `<div class='card'><img src='${schedule[i].image}' alt='${schedule[i].opponent}' loading="lazy"><h2>${schedule[i].opponent}</h2><p>${schedule[i].date}</p></div>`;
+  }
+}
+
+function greatestWinsAssembly(greatestWins) {
+    greatestWinsContainer.innerHTML = "";
+    for (let i = 0; i < greatestWins.length; i++) {
+        greatestWinsContainer.innerHTML += `<div class='card'><img src='${greatestWins[i].image}' alt='${greatestWins[i].opponent}' loading="lazy"><h2>${greatestWins[i].opponent}</h2><p>${greatestWins[i].date}</p><p>Final Score: ${greatestWins[i].score}</p></div>`;
+      }
 }

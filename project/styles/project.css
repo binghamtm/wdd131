@@ -85,7 +85,7 @@ ul {
     
 }
 
-#card-container, #schedule-container-2024{
+#card-container, #schedule-container-2024, #schedule-container-2025, #greatest-wins-container{
      
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 450px));

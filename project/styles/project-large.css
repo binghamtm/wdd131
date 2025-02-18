@@ -15,14 +15,12 @@
 
     nav {
         display: block;
-        
         width: 80%;
     }
 
     .navigation {
         display: flex;
         justify-content: space-evenly;
-        
     }
     
     #nike-image {
@@ -35,12 +33,10 @@
         width: 100%;
         font-size: 2vw;
         border-radius: 10px;
-        
     }
 
     li:hover {
         background-color: var(--secondary-color);
-        
     }
     li:hover a {
         width: 100%;
