@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thomas Bingham">
-    <meta name="description" content="BYU Football Stats">
+    <meta name="description" content="BYU Football home and news">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,11 @@
 </head>
 <body>
     <Header>
+        <div id="upper-header">
+            <img id="hero" src="images/hero.webp" alt="byu logo">
         
-        <img id="hero" src="images/hero.webp" alt="byu logo">
-        
-        <button id="menu"></button>
-       
+            <button id="menu"></button>
+        </div>
         <nav>
             
             <ul class="navigation">
@@ -38,12 +38,24 @@
     </Header>
     <main>
         <h1>BYU FOOTBALL</h1>
+        <p>Welcome, <span id="user-name">Guest</span></p>
         <section>
             <h2>Current News</h2>
             <div id="card-container"></div>
         </section>
-        <section>
+        <section class="form">
             
+            <form method="get" action="#">
+                <h2>Want to keep up on the latest news?</h2>
+                <fieldset>
+                    <legend>Join our email list</legend>
+                    <label for="name">Enter your name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Enter your email</label>
+                    <input type="text" name="email" id="email">
+                </fieldset>    
+                <input type="submit" id="submit" value="Keep me Updated!">
+            </form>
         </section>
     </main>
     <footer>

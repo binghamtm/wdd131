@@ -32,37 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
             averagerating: 5.0
         }
     ];
-
-
-
     currentYear.innerHTML = today.getFullYear();
     lastModified.innerHTML = document.lastModified;
-
-
-
     createItems(products);
+
+
     visitCounter();
 
 
 
     function createItems(products) {
-
         for (let i = 0; i < products.length; i++) {
             productItem.innerHTML += `<option value="${products[i].id}">${products[i].name}</option>`;
         }
     }
-
     function visitCounter() {
-
-        numVisits = Number(window.localStorage.getItem("visits-ls"));
+        numVisits = Number(window.localStorage.getItem("visits-ls")) || 0;
         numVisits++;
         localStorage.setItem("visits-ls", numVisits);
-
         if (submissionCounter) {
             submissionCounter.textContent = numVisits;
         }
-        else {
-            console.log("I cannot figure this out")
-        }
+
     }
 });

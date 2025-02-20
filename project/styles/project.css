@@ -16,8 +16,15 @@ body {
     font-size: 20px;
 }
 
+#upper-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
 header {
-    display: flex;
+    
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 10px;
@@ -27,12 +34,14 @@ header {
 
 nav {
     display: none;
+    
 }
 
 button {
     width: 3em;
     background-color: var(--primary-color);
     border: none;
+    justify-self: end;
 }
 
 h1, h2 {
@@ -45,7 +54,8 @@ ul {
 #menu::before {
     content: '☰';
     font-size: xx-large;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    text-align: right;
     
 }
 
@@ -119,7 +129,54 @@ ul {
 .card:hover {
     transform: scale(1.1);
 }
+
+form {
+    
+    background-color: var(--color-three);
+    padding: 5%;
+    border-radius: 10px;
+    
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+    border: 4px solid var(--primary-color)
+
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    padding-top: 20px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    display: block;
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+input[type="submit"] {
+    margin: 20px auto;
+    font-size: larger;
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
+}
+
+
+
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+

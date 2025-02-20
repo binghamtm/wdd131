@@ -303,6 +303,11 @@ let greatestWins = [
     }
 ];
 /******************** */
+/**user name variables */
+let setUserName = document.querySelector("#user-name");
+let inputUserName = document.querySelector("#name");
+let submitButton = document.querySelector("#submit");
+/*********************** */
 /**MAIN CODE************ */
 
 hamMenu();
@@ -321,6 +326,17 @@ if(window.location.href.includes("/greatest-wins.html")) {
     greatestWinsAssembly(greatestWins);
 }
 
+if("username" in localStorage) {
+    setUserName.innerHTML = localStorage.getItem("username");
+}
+
+submitButton.addEventListener('click', () => {
+    localStorage.setItem('username', inputUserName.value);
+    setUserName.innerHTML = localStorage.getItem("username");
+
+
+});
+    
 
 
 

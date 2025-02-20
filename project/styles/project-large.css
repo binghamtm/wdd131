@@ -6,9 +6,12 @@
 }
 
 @media screen and (min-width: 700px) {
-   
-    
-   
+
+
+    header {
+        display: flex;
+    }
+
     button {
         display: none;
     }
@@ -16,13 +19,20 @@
     nav {
         display: block;
         width: 80%;
+
     }
 
     .navigation {
         display: flex;
         justify-content: space-evenly;
     }
-    
+
+    #hero {
+        max-width: 100%;
+        max-height: 70px;
+
+    }
+
     #nike-image {
         display: block;
         max-width: 25%;
@@ -38,6 +48,7 @@
     li:hover {
         background-color: var(--secondary-color);
     }
+
     li:hover a {
         width: 100%;
         color: var(--primary-color);
